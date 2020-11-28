@@ -3,43 +3,20 @@ package com.javaex.ex04;
 public class Base {
 
 	public void service(String state) {
+	if (state.equals("낮")) {
+		day();	
+	}else if (state.equals("밤")) {
+		night();
+	}else if (state.equals("오후")) {
+		afternoon();
 	}
+	
+		}
+	
 
-	// field
-	private String day;
-	private String night;
-	private String afternoon;
+	
 
-	// constructor
-
-	public Base() {
-		super();
-	}
-
-	// getter-setter
-	public String getDay() {
-		return day;
-	}
-
-	public void setDay(String day) {
-		this.day = day;
-	}
-
-	public String getNight() {
-		return night;
-	}
-
-	public void setNight(String night) {
-		this.night = night;
-	}
-
-	public String getAfternoon() {
-		return afternoon;
-	}
-
-	public void setAfternoon(String afternoon) {
-		this.afternoon = afternoon;
-	}
+	
 
 	// method-general
 	public void day() {
